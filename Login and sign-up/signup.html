@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="head">
+        <!-- <video autoplay loop muted plays-inline class="back-video">
+            <source src="pc.mp4" type="video/mp4" />
+            video
+            <source />
+        </video> -->
+
+        <div class="dot">
+            <form action="">
+                <h1>Create Account</h1>
+                <div class="input-box">
+                    <input class="inside" type="text" placeholder="Enter your name" />
+                </div>
+
+                <div class="input-box">
+                    <input class="inside" type="text" placeholder="Enter your email" />
+                </div>
+
+                <div class="input-box">
+                    <input class="inside" type="text" placeholder="Enter your password" />
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Enter your mobile no" />
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox" /> Remember me </label>
+                    <!-- <a href="/Forgot.html">Forgot Password?</a> -->
+                </div>
+
+                <button
+                    type="button" 
+                    class="btn"
+                    id="mama"
+                    onclick="openpage()"
+                >
+                    Login
+                </button>
+
+                <div class="register">
+                    <p>Go to the login page</p>
+                    <a href="/login.html" onclick="openpage()" >login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openpage() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

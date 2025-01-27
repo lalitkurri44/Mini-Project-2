@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+      width: auto;
+      height: 100%;
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #ffffff, #1c1d209c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.dot {
+  left: 27rem;
+  position: relative;
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 500px; /* Maximum width for larger screens */
+  background-color: rgba(0, 0, 0, 0.7); /* Added background color for contrast */
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#selector {
+  text-align: center;
+}
+
+.dot h1 {
+  text-align: center;
+  font-size: 28px; /* Reduced size for mobile */
+  margin: 20px;
+}
+
+.input-box {
+  width: 100%;
+  margin-bottom: 15px; /* Added margin for spacing */
+}
+
+.input-box input {
+  margin: 1px;
+  font-size: 18px; /* Adjusted size for readability */
+  padding: 10px;
+  width: 100%;
+  background: white;
+  border: 2px solid #ccc; /* Border color adjusted */
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 179, 0, 0.7);
+}
+
+.input-box input::placeholder {
+  color: black;
+  font-size: larger;
+}
+
+.dot .remember-forgot {
+  display: flex;
+  /* justify-content: space-between; */
+  color: aliceblue;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.remember-forgot .checkbox {
+  accent-color: aliceblue;
+}
+
+.remember-forgot a {
+  text-decoration: none;
+  font-size: 14px; /* Consistent font size */
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.dot .btn {
+  /* justify-content: center; */
+  flex: 1;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+  width: 100%;
+  height: 45px;
+}
+
+.btn {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.dot .register {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px;
+}
+
+.register p a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 16px; /* Adjusted for visibility */
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+.inside {
+  text-size-adjust: 400px;
+}
+
+.register {
+  color: aliceblue;
+}
+
+.selector #fileInput {
+  justify-content: center;
+  text-align: center;
+}
+
+.container nav ul {
+  margin: 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 100vw;
+  background-color: rgb(54, 3, 3);
+  color: white;
+}
+
+#fileInput {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 100;
+  font-size: small;
+  outline: none;
+  box-shadow: 0 0 10px rgba(92, 60, 60, 0.1);
+  cursor: pointer;
+}
+
+.bos1 h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 28px; /* Adjusted for mobile */
+  margin: 20px;
+  font-weight: 800;
+}
+
+.selector {
+  display: block;
+  width: 100%; /* Set to full width for responsiveness */
+  text-align: center;
+}
+
+.head h3 {
+  text-align: center;
+  display: block;
+  width: 100%; /* Set to full width for responsiveness */
+}
+
+.toggle-btn {
+  position: relative;
+  bottom: 3rem;
+  left: 12rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffb300;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 6px;
+}
+
+/* .toggle-btn:hover {
+  transform: scale(0.5);
+  box-shadow: 0 0 15px rgba(255, 179, 0, 0.7);
+} */
